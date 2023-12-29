@@ -9,12 +9,21 @@
 /* Begin PBXBuildFile section */
 		C01A48752B3E7A7200EF99D2 /* BudgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48742B3E7A7200EF99D2 /* BudgetApp.swift */; };
 		C01A48772B3E7A7200EF99D2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48762B3E7A7200EF99D2 /* ContentView.swift */; };
-		C01A48792B3E7A7200EF99D2 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48782B3E7A7200EF99D2 /* Item.swift */; };
 		C01A487B2B3E7A7200EF99D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01A487A2B3E7A7200EF99D2 /* Assets.xcassets */; };
 		C01A487E2B3E7A7200EF99D2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C01A487D2B3E7A7200EF99D2 /* Preview Assets.xcassets */; };
 		C01A48882B3E7A7200EF99D2 /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48872B3E7A7200EF99D2 /* BudgetTests.swift */; };
 		C01A48922B3E7A7200EF99D2 /* BudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48912B3E7A7200EF99D2 /* BudgetUITests.swift */; };
 		C01A48942B3E7A7200EF99D2 /* BudgetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48932B3E7A7200EF99D2 /* BudgetUITestsLaunchTests.swift */; };
+		C01A48A42B3E7B1700EF99D2 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48A12B3E7B1700EF99D2 /* NavigationRouter.swift */; };
+		C01A48A52B3E7B1700EF99D2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48A22B3E7B1700EF99D2 /* Tab.swift */; };
+		C01A48A62B3E7B1700EF99D2 /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48A32B3E7B1700EF99D2 /* Route.swift */; };
+		C01A48B42B3E7B3B00EF99D2 /* View+OnWillAppear.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48AB2B3E7B3B00EF99D2 /* View+OnWillAppear.swift */; };
+		C01A48B52B3E7B3B00EF99D2 /* ViewWillAppearHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48AC2B3E7B3B00EF99D2 /* ViewWillAppearHandler.swift */; };
+		C01A48B62B3E7B3B00EF99D2 /* View+TabBarBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48AD2B3E7B3B00EF99D2 /* View+TabBarBackgroundColor.swift */; };
+		C01A48B72B3E7B3B00EF99D2 /* NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48AF2B3E7B3B00EF99D2 /* NavigationBarStyle.swift */; };
+		C01A48B82B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48B02B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift */; };
+		C01A48B92B3E7B3B00EF99D2 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48B22B3E7B3B00EF99D2 /* NavigationStackView.swift */; };
+		C01A48BA2B3E7B3B00EF99D2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48B32B3E7B3B00EF99D2 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +47,6 @@
 		C01A48712B3E7A7200EF99D2 /* Budget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01A48742B3E7A7200EF99D2 /* BudgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetApp.swift; sourceTree = "<group>"; };
 		C01A48762B3E7A7200EF99D2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C01A48782B3E7A7200EF99D2 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C01A487A2B3E7A7200EF99D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C01A487D2B3E7A7200EF99D2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C01A48832B3E7A7200EF99D2 /* BudgetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +54,16 @@
 		C01A488D2B3E7A7200EF99D2 /* BudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C01A48912B3E7A7200EF99D2 /* BudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetUITests.swift; sourceTree = "<group>"; };
 		C01A48932B3E7A7200EF99D2 /* BudgetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C01A48A12B3E7B1700EF99D2 /* NavigationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		C01A48A22B3E7B1700EF99D2 /* Tab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		C01A48A32B3E7B1700EF99D2 /* Route.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		C01A48AB2B3E7B3B00EF99D2 /* View+OnWillAppear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+OnWillAppear.swift"; sourceTree = "<group>"; };
+		C01A48AC2B3E7B3B00EF99D2 /* ViewWillAppearHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWillAppearHandler.swift; sourceTree = "<group>"; };
+		C01A48AD2B3E7B3B00EF99D2 /* View+TabBarBackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+TabBarBackgroundColor.swift"; sourceTree = "<group>"; };
+		C01A48AF2B3E7B3B00EF99D2 /* NavigationBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarStyle.swift; sourceTree = "<group>"; };
+		C01A48B02B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+NavigationBarStyle.swift"; sourceTree = "<group>"; };
+		C01A48B22B3E7B3B00EF99D2 /* NavigationStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
+		C01A48B32B3E7B3B00EF99D2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,11 +114,12 @@
 		C01A48732B3E7A7200EF99D2 /* Budget */ = {
 			isa = PBXGroup;
 			children = (
+				C01A487A2B3E7A7200EF99D2 /* Assets.xcassets */,
 				C01A48742B3E7A7200EF99D2 /* BudgetApp.swift */,
 				C01A48762B3E7A7200EF99D2 /* ContentView.swift */,
-				C01A48782B3E7A7200EF99D2 /* Item.swift */,
-				C01A487A2B3E7A7200EF99D2 /* Assets.xcassets */,
+				C01A48A02B3E7B1700EF99D2 /* NavigationRouter */,
 				C01A487C2B3E7A7200EF99D2 /* Preview Content */,
+				C01A48A72B3E7B3B00EF99D2 /* Supporting */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -128,6 +147,70 @@
 				C01A48932B3E7A7200EF99D2 /* BudgetUITestsLaunchTests.swift */,
 			);
 			path = BudgetUITests;
+			sourceTree = "<group>";
+		};
+		C01A48A02B3E7B1700EF99D2 /* NavigationRouter */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48A12B3E7B1700EF99D2 /* NavigationRouter.swift */,
+				C01A48A32B3E7B1700EF99D2 /* Route.swift */,
+				C01A48A22B3E7B1700EF99D2 /* Tab.swift */,
+			);
+			path = NavigationRouter;
+			sourceTree = "<group>";
+		};
+		C01A48A72B3E7B3B00EF99D2 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48B12B3E7B3B00EF99D2 /* Components */,
+				C01A48A82B3E7B3B00EF99D2 /* Extensions */,
+			);
+			path = Supporting;
+			sourceTree = "<group>";
+		};
+		C01A48A82B3E7B3B00EF99D2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48A92B3E7B3B00EF99D2 /* ViewExtensions */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C01A48A92B3E7B3B00EF99D2 /* ViewExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48AD2B3E7B3B00EF99D2 /* View+TabBarBackgroundColor.swift */,
+				C01A48AE2B3E7B3B00EF99D2 /* View+NavigationBarStyle */,
+				C01A48AA2B3E7B3B00EF99D2 /* View+OnWillAppear */,
+			);
+			path = ViewExtensions;
+			sourceTree = "<group>";
+		};
+		C01A48AA2B3E7B3B00EF99D2 /* View+OnWillAppear */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48AB2B3E7B3B00EF99D2 /* View+OnWillAppear.swift */,
+				C01A48AC2B3E7B3B00EF99D2 /* ViewWillAppearHandler.swift */,
+			);
+			path = "View+OnWillAppear";
+			sourceTree = "<group>";
+		};
+		C01A48AE2B3E7B3B00EF99D2 /* View+NavigationBarStyle */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48AF2B3E7B3B00EF99D2 /* NavigationBarStyle.swift */,
+				C01A48B02B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift */,
+			);
+			path = "View+NavigationBarStyle";
+			sourceTree = "<group>";
+		};
+		C01A48B12B3E7B3B00EF99D2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48B32B3E7B3B00EF99D2 /* CardView.swift */,
+				C01A48B22B3E7B3B00EF99D2 /* NavigationStackView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +343,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C01A48B62B3E7B3B00EF99D2 /* View+TabBarBackgroundColor.swift in Sources */,
+				C01A48B72B3E7B3B00EF99D2 /* NavigationBarStyle.swift in Sources */,
+				C01A48B42B3E7B3B00EF99D2 /* View+OnWillAppear.swift in Sources */,
 				C01A48772B3E7A7200EF99D2 /* ContentView.swift in Sources */,
-				C01A48792B3E7A7200EF99D2 /* Item.swift in Sources */,
 				C01A48752B3E7A7200EF99D2 /* BudgetApp.swift in Sources */,
+				C01A48A42B3E7B1700EF99D2 /* NavigationRouter.swift in Sources */,
+				C01A48A62B3E7B1700EF99D2 /* Route.swift in Sources */,
+				C01A48A52B3E7B1700EF99D2 /* Tab.swift in Sources */,
+				C01A48B82B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift in Sources */,
+				C01A48B92B3E7B3B00EF99D2 /* NavigationStackView.swift in Sources */,
+				C01A48BA2B3E7B3B00EF99D2 /* CardView.swift in Sources */,
+				C01A48B52B3E7B3B00EF99D2 /* ViewWillAppearHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

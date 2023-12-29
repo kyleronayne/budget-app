@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject private var navigationRouter: NavigationRouter
+    
     var body: some View {
-        Text("Hello, world!")
+        TabView(selection: $navigationRouter.activeTab) {
+            Group {
+                BudgetTabView()
+            }
+            .tabBarBackgroundColor(.white)
+        }
+        .tint(.green)
     }
 }
 

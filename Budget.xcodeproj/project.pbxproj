@@ -24,6 +24,8 @@
 		C01A48B82B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48B02B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift */; };
 		C01A48B92B3E7B3B00EF99D2 /* NavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48B22B3E7B3B00EF99D2 /* NavigationStackView.swift */; };
 		C01A48BA2B3E7B3B00EF99D2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48B32B3E7B3B00EF99D2 /* CardView.swift */; };
+		C01A48BD2B3E814E00EF99D2 /* BudgetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */; };
+		C01A48C12B3F389600EF99D2 /* BudgetTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		C01A48B02B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+NavigationBarStyle.swift"; sourceTree = "<group>"; };
 		C01A48B22B3E7B3B00EF99D2 /* NavigationStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationStackView.swift; sourceTree = "<group>"; };
 		C01A48B32B3E7B3B00EF99D2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTabView.swift; sourceTree = "<group>"; };
+		C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTabViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 				C01A487A2B3E7A7200EF99D2 /* Assets.xcassets */,
 				C01A48742B3E7A7200EF99D2 /* BudgetApp.swift */,
 				C01A48762B3E7A7200EF99D2 /* ContentView.swift */,
+				C01A48BB2B3E812800EF99D2 /* BudgetTab */,
 				C01A48A02B3E7B1700EF99D2 /* NavigationRouter */,
 				C01A487C2B3E7A7200EF99D2 /* Preview Content */,
 				C01A48A72B3E7B3B00EF99D2 /* Supporting */,
@@ -162,7 +167,7 @@
 		C01A48A72B3E7B3B00EF99D2 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				C01A48B12B3E7B3B00EF99D2 /* Components */,
+				C01A48B12B3E7B3B00EF99D2 /* SharedComponentViews */,
 				C01A48A82B3E7B3B00EF99D2 /* Extensions */,
 			);
 			path = Supporting;
@@ -204,13 +209,22 @@
 			path = "View+NavigationBarStyle";
 			sourceTree = "<group>";
 		};
-		C01A48B12B3E7B3B00EF99D2 /* Components */ = {
+		C01A48B12B3E7B3B00EF99D2 /* SharedComponentViews */ = {
 			isa = PBXGroup;
 			children = (
 				C01A48B32B3E7B3B00EF99D2 /* CardView.swift */,
 				C01A48B22B3E7B3B00EF99D2 /* NavigationStackView.swift */,
 			);
-			path = Components;
+			path = SharedComponentViews;
+			sourceTree = "<group>";
+		};
+		C01A48BB2B3E812800EF99D2 /* BudgetTab */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */,
+				C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */,
+			);
+			path = BudgetTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,12 +362,14 @@
 				C01A48B42B3E7B3B00EF99D2 /* View+OnWillAppear.swift in Sources */,
 				C01A48772B3E7A7200EF99D2 /* ContentView.swift in Sources */,
 				C01A48752B3E7A7200EF99D2 /* BudgetApp.swift in Sources */,
+				C01A48C12B3F389600EF99D2 /* BudgetTabViewModel.swift in Sources */,
 				C01A48A42B3E7B1700EF99D2 /* NavigationRouter.swift in Sources */,
 				C01A48A62B3E7B1700EF99D2 /* Route.swift in Sources */,
 				C01A48A52B3E7B1700EF99D2 /* Tab.swift in Sources */,
 				C01A48B82B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift in Sources */,
 				C01A48B92B3E7B3B00EF99D2 /* NavigationStackView.swift in Sources */,
 				C01A48BA2B3E7B3B00EF99D2 /* CardView.swift in Sources */,
+				C01A48BD2B3E814E00EF99D2 /* BudgetTabView.swift in Sources */,
 				C01A48B52B3E7B3B00EF99D2 /* ViewWillAppearHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

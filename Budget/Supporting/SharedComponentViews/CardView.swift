@@ -14,7 +14,6 @@ import SwiftUI
 ///   - hasShadow: A boolean that determines if this card has a shadow
 ///   - content: The content to be displayed within the card
 struct CardView<Content: View>: View {
-    @State private var contentSize: CGSize = .zero
     @ViewBuilder private let content: Content
     private let backgroundColor: Color
     private let cornerRadius: CGFloat
@@ -40,17 +39,8 @@ struct CardView<Content: View>: View {
                         .fill(backgroundColor)
                 }
             }
-            .frame(width: contentSize.width, height: contentSize.height)
             
             content
-                .background(
-                    GeometryReader { geometryProxy in
-                        Color.clear
-                            .onAppear {
-                                contentSize = geometryProxy.size
-                            }
-                    }
-                )
         }
     }
 }

@@ -14,21 +14,21 @@ enum NavigationBarStyle: Equatable {
     var backgroundColor: Color {
         switch self {
             case .default:
-                return .blue
+                return .white
         }
     }
     
     var titleDisplayMode: NavigationBarItem.TitleDisplayMode {
         switch self {
             case .default:
-                return .inline
+                return .large
         }
     }
     
     var titleTextColor: Color {
         switch self {
             case .default:
-                return .white
+                return .black
         }
     }
 }

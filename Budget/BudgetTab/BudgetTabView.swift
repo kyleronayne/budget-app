@@ -7,24 +7,29 @@
 
 import SwiftUI
 
+/// The tab view where a user can view and create monthly budgets
 struct BudgetTabView: View {
     @EnvironmentObject private var navigationRouter: NavigationRouter
     @ObservedObject private var viewModel = BudgetTabViewModel()
     
     var body: some View {
         NavigationStackView(.default, path: navigationRouter.navigationPath(forTab: .budget)) {
-            ScrollView {
-                VStack {
-                    Text("Hello, world!")
+            VStack(alignment: .leading, spacing: 0) {
+                MonthPicker()
+                    .overlay(Divider(), alignment: .bottom)
+                
+                ScrollView {
+                    VStack {
+                        Text("Hello, world!")
+                            .padding()
+                    }
+                    .frame(maxWidth: .infinity)
                 }
-                .padding()
-                .frame(maxWidth: .infinity)
+                .background(Color.background)
             }
-            .navigationTitle("Budget")
-            .background(Color.background)
         }
-        .tag(Tab.budget)
         .environmentObject(viewModel)
+        .tag(Tab.budget)
         .tabItem {
             Label("Budget", systemImage: "dollarsign.square")
         }

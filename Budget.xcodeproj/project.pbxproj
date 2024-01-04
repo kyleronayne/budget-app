@@ -26,6 +26,7 @@
 		C01A48BA2B3E7B3B00EF99D2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48B32B3E7B3B00EF99D2 /* CardView.swift */; };
 		C01A48BD2B3E814E00EF99D2 /* BudgetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */; };
 		C01A48C12B3F389600EF99D2 /* BudgetTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */; };
+		C01A48C52B3F406900EF99D2 /* MonthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48C42B3F406900EF99D2 /* MonthPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		C01A48B32B3E7B3B00EF99D2 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTabView.swift; sourceTree = "<group>"; };
 		C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTabViewModel.swift; sourceTree = "<group>"; };
+		C01A48C42B3F406900EF99D2 /* MonthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,8 +225,17 @@
 			children = (
 				C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */,
 				C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */,
+				C01A48C32B3F404400EF99D2 /* ComponentViews */,
 			);
 			path = BudgetTab;
+			sourceTree = "<group>";
+		};
+		C01A48C32B3F404400EF99D2 /* ComponentViews */ = {
+			isa = PBXGroup;
+			children = (
+				C01A48C42B3F406900EF99D2 /* MonthPicker.swift */,
+			);
+			path = ComponentViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +378,7 @@
 				C01A48A62B3E7B1700EF99D2 /* Route.swift in Sources */,
 				C01A48A52B3E7B1700EF99D2 /* Tab.swift in Sources */,
 				C01A48B82B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift in Sources */,
+				C01A48C52B3F406900EF99D2 /* MonthPicker.swift in Sources */,
 				C01A48B92B3E7B3B00EF99D2 /* NavigationStackView.swift in Sources */,
 				C01A48BA2B3E7B3B00EF99D2 /* CardView.swift in Sources */,
 				C01A48BD2B3E814E00EF99D2 /* BudgetTabView.swift in Sources */,

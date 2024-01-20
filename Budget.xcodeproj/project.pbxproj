@@ -27,6 +27,9 @@
 		C01A48BD2B3E814E00EF99D2 /* BudgetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */; };
 		C01A48C12B3F389600EF99D2 /* BudgetTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */; };
 		C01A48C52B3F406900EF99D2 /* MonthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48C42B3F406900EF99D2 /* MonthPicker.swift */; };
+		C04616B42B58E7CD003B2BB0 /* BudgetCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616B32B58E7CD003B2BB0 /* BudgetCreationView.swift */; };
+		C04616B62B59EC33003B2BB0 /* BudgetCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616B52B59EC33003B2BB0 /* BudgetCreationViewModel.swift */; };
+		C04616BB2B59ECAF003B2BB0 /* BudgetCreationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616BA2B59ECAF003B2BB0 /* BudgetCreationStep.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTabView.swift; sourceTree = "<group>"; };
 		C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTabViewModel.swift; sourceTree = "<group>"; };
 		C01A48C42B3F406900EF99D2 /* MonthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPicker.swift; sourceTree = "<group>"; };
+		C04616B32B58E7CD003B2BB0 /* BudgetCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationView.swift; sourceTree = "<group>"; };
+		C04616B52B59EC33003B2BB0 /* BudgetCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationViewModel.swift; sourceTree = "<group>"; };
+		C04616BA2B59ECAF003B2BB0 /* BudgetCreationStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationStep.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +175,7 @@
 		C01A48A72B3E7B3B00EF99D2 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
-				C01A48B12B3E7B3B00EF99D2 /* SharedComponentViews */,
+				C01A48B12B3E7B3B00EF99D2 /* SharedComponents */,
 				C01A48A82B3E7B3B00EF99D2 /* Extensions */,
 			);
 			path = Supporting;
@@ -211,31 +217,58 @@
 			path = "View+NavigationBarStyle";
 			sourceTree = "<group>";
 		};
-		C01A48B12B3E7B3B00EF99D2 /* SharedComponentViews */ = {
+		C01A48B12B3E7B3B00EF99D2 /* SharedComponents */ = {
 			isa = PBXGroup;
 			children = (
 				C01A48B32B3E7B3B00EF99D2 /* CardView.swift */,
 				C01A48B22B3E7B3B00EF99D2 /* NavigationStackView.swift */,
 			);
-			path = SharedComponentViews;
+			path = SharedComponents;
 			sourceTree = "<group>";
 		};
 		C01A48BB2B3E812800EF99D2 /* BudgetTab */ = {
 			isa = PBXGroup;
 			children = (
-				C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */,
-				C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */,
-				C01A48C32B3F404400EF99D2 /* ComponentViews */,
+				C04616B72B59EC55003B2BB0 /* Models */,
+				C04616B82B59EC60003B2BB0 /* Views */,
+				C04616B92B59EC6A003B2BB0 /* ViewModels */,
 			);
 			path = BudgetTab;
 			sourceTree = "<group>";
 		};
-		C01A48C32B3F404400EF99D2 /* ComponentViews */ = {
+		C01A48C32B3F404400EF99D2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				C01A48C42B3F406900EF99D2 /* MonthPicker.swift */,
 			);
-			path = ComponentViews;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C04616B72B59EC55003B2BB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C04616BA2B59ECAF003B2BB0 /* BudgetCreationStep.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C04616B82B59EC60003B2BB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C04616B32B58E7CD003B2BB0 /* BudgetCreationView.swift */,
+				C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */,
+				C01A48C32B3F404400EF99D2 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C04616B92B59EC6A003B2BB0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C04616B52B59EC33003B2BB0 /* BudgetCreationViewModel.swift */,
+				C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +406,7 @@
 				C01A48B42B3E7B3B00EF99D2 /* View+OnWillAppear.swift in Sources */,
 				C01A48772B3E7A7200EF99D2 /* ContentView.swift in Sources */,
 				C01A48752B3E7A7200EF99D2 /* BudgetApp.swift in Sources */,
+				C04616BB2B59ECAF003B2BB0 /* BudgetCreationStep.swift in Sources */,
 				C01A48C12B3F389600EF99D2 /* BudgetTabViewModel.swift in Sources */,
 				C01A48A42B3E7B1700EF99D2 /* NavigationRouter.swift in Sources */,
 				C01A48A62B3E7B1700EF99D2 /* Route.swift in Sources */,
@@ -380,8 +414,10 @@
 				C01A48B82B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift in Sources */,
 				C01A48C52B3F406900EF99D2 /* MonthPicker.swift in Sources */,
 				C01A48B92B3E7B3B00EF99D2 /* NavigationStackView.swift in Sources */,
+				C04616B62B59EC33003B2BB0 /* BudgetCreationViewModel.swift in Sources */,
 				C01A48BA2B3E7B3B00EF99D2 /* CardView.swift in Sources */,
 				C01A48BD2B3E814E00EF99D2 /* BudgetTabView.swift in Sources */,
+				C04616B42B58E7CD003B2BB0 /* BudgetCreationView.swift in Sources */,
 				C01A48B52B3E7B3B00EF99D2 /* ViewWillAppearHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -554,6 +590,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -583,6 +620,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,11 +7,12 @@
 
 import Foundation
 
-/// The class that manages a ``BudgetTabView``
+/// A class that manages the data, user interaction, and presentation logic for a ``BudgetTabView``
 class BudgetTabViewModel: ObservableObject {
     @Published var selectedBudgetMonth: DateComponents = {
         Calendar.current.dateComponents([.year, .month], from: Date())
     }()
+    @Published var isShowingBudgetCreationView = false
     
     static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()

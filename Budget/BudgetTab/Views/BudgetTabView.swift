@@ -10,7 +10,7 @@ import SwiftUI
 /// The tab view where a user can view and create monthly budgets
 struct BudgetTabView: View {
     @EnvironmentObject private var navigationRouter: NavigationRouter
-    @ObservedObject private var viewModel = BudgetTabViewModel()
+    @StateObject private var viewModel = BudgetTabViewModel()
     
     var body: some View {
         NavigationStackView(.default, path: navigationRouter.navigationPath(forTab: .budget)) {
@@ -20,12 +20,16 @@ struct BudgetTabView: View {
                 
                 ScrollView {
                     VStack {
-                        Text("Hello, world!")
-                            .padding()
+                        Button("Create Budget") {
+                            viewModel.isShowingBudgetCreationView.toggle()
+                        }
                     }
                     .frame(maxWidth: .infinity)
                 }
                 .background(Color.background)
+            }
+            .sheet(isPresented: $viewModel.isShowingBudgetCreationView) {
+                BudgetCreationView()
             }
         }
         .environmentObject(viewModel)

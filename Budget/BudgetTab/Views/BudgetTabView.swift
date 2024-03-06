@@ -21,15 +21,15 @@ struct BudgetTabView: View {
                 ScrollView {
                     VStack {
                         Button("Create Budget") {
-                            viewModel.isShowingBudgetCreationView.toggle()
+                            viewModel.didTapCreateBudgetButton()
                         }
                     }
                     .frame(maxWidth: .infinity)
                 }
                 .background(Color.background)
             }
-            .sheet(isPresented: $viewModel.isShowingBudgetCreationView) {
-                BudgetCreationView()
+            .fullScreenCover(isPresented: $viewModel.isPresentingBudgetCreationView) {
+                BudgetCreationFlowView()
             }
         }
         .environmentObject(viewModel)

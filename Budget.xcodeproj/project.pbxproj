@@ -27,9 +27,15 @@
 		C01A48BD2B3E814E00EF99D2 /* BudgetTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */; };
 		C01A48C12B3F389600EF99D2 /* BudgetTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */; };
 		C01A48C52B3F406900EF99D2 /* MonthPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A48C42B3F406900EF99D2 /* MonthPicker.swift */; };
-		C04616B42B58E7CD003B2BB0 /* BudgetCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616B32B58E7CD003B2BB0 /* BudgetCreationView.swift */; };
-		C04616B62B59EC33003B2BB0 /* BudgetCreationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616B52B59EC33003B2BB0 /* BudgetCreationViewModel.swift */; };
-		C04616BB2B59ECAF003B2BB0 /* BudgetCreationStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616BA2B59ECAF003B2BB0 /* BudgetCreationStep.swift */; };
+		C04616BB2B59ECAF003B2BB0 /* BudgetCreationFlowStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616BA2B59ECAF003B2BB0 /* BudgetCreationFlowStep.swift */; };
+		C04616BF2B5CC4DB003B2BB0 /* IncomeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616BE2B5CC4DB003B2BB0 /* IncomeEntryView.swift */; };
+		C04616C52B5F6835003B2BB0 /* View+UnstyledListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616C42B5F6835003B2BB0 /* View+UnstyledListRow.swift */; };
+		C04616C72B5F6AAA003B2BB0 /* StepHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616C62B5F6AAA003B2BB0 /* StepHeaderView.swift */; };
+		C04616C92B5F6CD1003B2BB0 /* IncomeEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616C82B5F6CD1003B2BB0 /* IncomeEntryViewModel.swift */; };
+		C04616D32B65BFB5003B2BB0 /* BudgetCreationFlowData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616D22B65BFB5003B2BB0 /* BudgetCreationFlowData.swift */; };
+		C04616D72B65CA16003B2BB0 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616D62B65CA16003B2BB0 /* Income.swift */; };
+		C04616DC2B688FCA003B2BB0 /* BudgetCreationFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616DB2B688FCA003B2BB0 /* BudgetCreationFlowView.swift */; };
+		C04616DE2B69EBD6003B2BB0 /* BudgetCreationFlowRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04616DD2B69EBD6003B2BB0 /* BudgetCreationFlowRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,9 +79,15 @@
 		C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTabView.swift; sourceTree = "<group>"; };
 		C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetTabViewModel.swift; sourceTree = "<group>"; };
 		C01A48C42B3F406900EF99D2 /* MonthPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthPicker.swift; sourceTree = "<group>"; };
-		C04616B32B58E7CD003B2BB0 /* BudgetCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationView.swift; sourceTree = "<group>"; };
-		C04616B52B59EC33003B2BB0 /* BudgetCreationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationViewModel.swift; sourceTree = "<group>"; };
-		C04616BA2B59ECAF003B2BB0 /* BudgetCreationStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationStep.swift; sourceTree = "<group>"; };
+		C04616BA2B59ECAF003B2BB0 /* BudgetCreationFlowStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationFlowStep.swift; sourceTree = "<group>"; };
+		C04616BE2B5CC4DB003B2BB0 /* IncomeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEntryView.swift; sourceTree = "<group>"; };
+		C04616C42B5F6835003B2BB0 /* View+UnstyledListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+UnstyledListRow.swift"; sourceTree = "<group>"; };
+		C04616C62B5F6AAA003B2BB0 /* StepHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepHeaderView.swift; sourceTree = "<group>"; };
+		C04616C82B5F6CD1003B2BB0 /* IncomeEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeEntryViewModel.swift; sourceTree = "<group>"; };
+		C04616D22B65BFB5003B2BB0 /* BudgetCreationFlowData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationFlowData.swift; sourceTree = "<group>"; };
+		C04616D62B65CA16003B2BB0 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		C04616DB2B688FCA003B2BB0 /* BudgetCreationFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationFlowView.swift; sourceTree = "<group>"; };
+		C04616DD2B69EBD6003B2BB0 /* BudgetCreationFlowRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCreationFlowRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +142,9 @@
 				C01A48742B3E7A7200EF99D2 /* BudgetApp.swift */,
 				C01A48762B3E7A7200EF99D2 /* ContentView.swift */,
 				C01A48BB2B3E812800EF99D2 /* BudgetTab */,
-				C01A48A02B3E7B1700EF99D2 /* NavigationRouter */,
-				C01A487C2B3E7A7200EF99D2 /* Preview Content */,
+				C04616DA2B688FA0003B2BB0 /* BudgetCreationFlow */,
 				C01A48A72B3E7B3B00EF99D2 /* Supporting */,
+				C01A487C2B3E7A7200EF99D2 /* Preview Content */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -177,6 +189,7 @@
 			children = (
 				C01A48B12B3E7B3B00EF99D2 /* SharedComponents */,
 				C01A48A82B3E7B3B00EF99D2 /* Extensions */,
+				C01A48A02B3E7B1700EF99D2 /* NavigationRouter */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -193,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				C01A48AD2B3E7B3B00EF99D2 /* View+TabBarBackgroundColor.swift */,
+				C04616C42B5F6835003B2BB0 /* View+UnstyledListRow.swift */,
 				C01A48AE2B3E7B3B00EF99D2 /* View+NavigationBarStyle */,
 				C01A48AA2B3E7B3B00EF99D2 /* View+OnWillAppear */,
 			);
@@ -229,7 +243,6 @@
 		C01A48BB2B3E812800EF99D2 /* BudgetTab */ = {
 			isa = PBXGroup;
 			children = (
-				C04616B72B59EC55003B2BB0 /* Models */,
 				C04616B82B59EC60003B2BB0 /* Views */,
 				C04616B92B59EC6A003B2BB0 /* ViewModels */,
 			);
@@ -247,7 +260,9 @@
 		C04616B72B59EC55003B2BB0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C04616BA2B59ECAF003B2BB0 /* BudgetCreationStep.swift */,
+				C04616BA2B59ECAF003B2BB0 /* BudgetCreationFlowStep.swift */,
+				C04616D22B65BFB5003B2BB0 /* BudgetCreationFlowData.swift */,
+				C04616D62B65CA16003B2BB0 /* Income.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -255,7 +270,6 @@
 		C04616B82B59EC60003B2BB0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C04616B32B58E7CD003B2BB0 /* BudgetCreationView.swift */,
 				C01A48BC2B3E814E00EF99D2 /* BudgetTabView.swift */,
 				C01A48C32B3F404400EF99D2 /* Components */,
 			);
@@ -265,10 +279,46 @@
 		C04616B92B59EC6A003B2BB0 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				C04616B52B59EC33003B2BB0 /* BudgetCreationViewModel.swift */,
 				C01A48C02B3F389600EF99D2 /* BudgetTabViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C04616C12B5F6703003B2BB0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C04616BE2B5CC4DB003B2BB0 /* IncomeEntryView.swift */,
+				C04616C32B5F6746003B2BB0 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C04616C22B5F6720003B2BB0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C04616C82B5F6CD1003B2BB0 /* IncomeEntryViewModel.swift */,
+				C04616DD2B69EBD6003B2BB0 /* BudgetCreationFlowRouter.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C04616C32B5F6746003B2BB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C04616C62B5F6AAA003B2BB0 /* StepHeaderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C04616DA2B688FA0003B2BB0 /* BudgetCreationFlow */ = {
+			isa = PBXGroup;
+			children = (
+				C04616DB2B688FCA003B2BB0 /* BudgetCreationFlowView.swift */,
+				C04616B72B59EC55003B2BB0 /* Models */,
+				C04616C12B5F6703003B2BB0 /* Views */,
+				C04616C22B5F6720003B2BB0 /* ViewModels */,
+			);
+			path = BudgetCreationFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,22 +452,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				C01A48B62B3E7B3B00EF99D2 /* View+TabBarBackgroundColor.swift in Sources */,
+				C04616DC2B688FCA003B2BB0 /* BudgetCreationFlowView.swift in Sources */,
+				C04616DE2B69EBD6003B2BB0 /* BudgetCreationFlowRouter.swift in Sources */,
+				C04616D72B65CA16003B2BB0 /* Income.swift in Sources */,
 				C01A48B72B3E7B3B00EF99D2 /* NavigationBarStyle.swift in Sources */,
+				C04616C92B5F6CD1003B2BB0 /* IncomeEntryViewModel.swift in Sources */,
 				C01A48B42B3E7B3B00EF99D2 /* View+OnWillAppear.swift in Sources */,
 				C01A48772B3E7A7200EF99D2 /* ContentView.swift in Sources */,
 				C01A48752B3E7A7200EF99D2 /* BudgetApp.swift in Sources */,
-				C04616BB2B59ECAF003B2BB0 /* BudgetCreationStep.swift in Sources */,
+				C04616BB2B59ECAF003B2BB0 /* BudgetCreationFlowStep.swift in Sources */,
 				C01A48C12B3F389600EF99D2 /* BudgetTabViewModel.swift in Sources */,
 				C01A48A42B3E7B1700EF99D2 /* NavigationRouter.swift in Sources */,
 				C01A48A62B3E7B1700EF99D2 /* Route.swift in Sources */,
+				C04616C72B5F6AAA003B2BB0 /* StepHeaderView.swift in Sources */,
 				C01A48A52B3E7B1700EF99D2 /* Tab.swift in Sources */,
 				C01A48B82B3E7B3B00EF99D2 /* View+NavigationBarStyle.swift in Sources */,
 				C01A48C52B3F406900EF99D2 /* MonthPicker.swift in Sources */,
 				C01A48B92B3E7B3B00EF99D2 /* NavigationStackView.swift in Sources */,
-				C04616B62B59EC33003B2BB0 /* BudgetCreationViewModel.swift in Sources */,
 				C01A48BA2B3E7B3B00EF99D2 /* CardView.swift in Sources */,
+				C04616C52B5F6835003B2BB0 /* View+UnstyledListRow.swift in Sources */,
+				C04616D32B65BFB5003B2BB0 /* BudgetCreationFlowData.swift in Sources */,
 				C01A48BD2B3E814E00EF99D2 /* BudgetTabView.swift in Sources */,
-				C04616B42B58E7CD003B2BB0 /* BudgetCreationView.swift in Sources */,
+				C04616BF2B5CC4DB003B2BB0 /* IncomeEntryView.swift in Sources */,
 				C01A48B52B3E7B3B00EF99D2 /* ViewWillAppearHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

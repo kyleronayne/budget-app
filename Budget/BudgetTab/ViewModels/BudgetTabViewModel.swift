@@ -7,10 +7,10 @@
 
 import Foundation
 
-/// A class that manages the data, user interaction, and presentation logic for a ``BudgetTabView``
+/// Manages the data, user interaction, and presentation logic for a ``BudgetTabView``.
 class BudgetTabViewModel: ObservableObject {
     @Published var selectedBudgetMonth: DateComponents
-    @Published var isShowingBudgetCreationView = false
+    @Published var isPresentingBudgetCreationView = false
     
     init() {
         selectedBudgetMonth = Calendar.current.dateComponents([.year, .month], from: Date())
@@ -60,5 +60,10 @@ class BudgetTabViewModel: ObservableObject {
         }
         
         return BudgetTabViewModel.dateFormatter.string(from: dateForMonth)
+    }
+    
+    /// Handles the user's tap on the create budget button by presenting the ``BudgetCreationFlowView``.
+    func didTapCreateBudgetButton() {
+        isPresentingBudgetCreationView.toggle()
     }
 }

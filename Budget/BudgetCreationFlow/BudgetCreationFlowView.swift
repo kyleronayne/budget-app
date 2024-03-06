@@ -34,7 +34,7 @@ private class BudgetCreationFlowViewController: UIViewController, FlowRouterDele
         button.translatesAutoresizingMaskIntoConstraints = false
         button.configuration = .plain()
         button.configuration?.baseForegroundColor = .black
-        button.configuration?.image = UIImage(systemName: "chevron.left")
+        button.configuration?.image = UIImage(systemName: "chevron.backward")
         button.configuration?.imagePadding = 10
         button.addTarget(self, action: #selector(didTapBackButton), for: .touchUpInside)
         return button
@@ -52,7 +52,7 @@ private class BudgetCreationFlowViewController: UIViewController, FlowRouterDele
         
         pageView.translatesAutoresizingMaskIntoConstraints = false
         
-        // Set the current step to the flow router's first step
+        // Set the current step to the flow router's first step.
         pageViewController.setViewControllers([self.makeViewController(forStep: flowRouter.firstStep)], direction: .forward, animated: false)
         
         NSLayoutConstraint.activate([
@@ -90,7 +90,7 @@ private class BudgetCreationFlowViewController: UIViewController, FlowRouterDele
     ///   - step: The step for which to navigate. `nil` if the flow has ended.
     ///   - direction: The direction in which the flow should navigate.
     func didNavigate(to step: BudgetCreationFlowStep?, inDirection direction: UIPageViewController.NavigationDirection) {
-        // If the received step is not nil, set it as the current step; otherwise, dismiss the flow
+        // If the received step is not nil, set it as the current step; otherwise, dismiss the flow.
         if let step {
             backButton.isEnabled = false
             
